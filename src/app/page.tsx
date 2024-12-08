@@ -9,7 +9,7 @@ import Trending from './components/Trending'
 import TrendingProducts from './components/TrendingProducts'
 import TopCategories from './components/TopCategories'
 import Banner from './components/Banner'
-
+import LatestBlog from './components/LatestBlog'
 export default function Home() {
   return (
     <div>
@@ -23,6 +23,8 @@ export default function Home() {
       <TopCategories/>
       <Newslater/>
       <Banner/>
+      <LatestBlog/>
+      <br/>
 
     </div>
   )
