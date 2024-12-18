@@ -1,24 +1,31 @@
 import React from "react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"; 
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 import Link from "next/link";
 import { Search, ChevronDown, Menu } from "lucide-react";
 import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import "@fontsource-variable/josefin-sans";
 
 export default function Navbar() {
   return (
     <header className="bg-white shadow-md">
       <div className="flex items-center justify-evenly px-6 py-4 lg:px-16">
         {/* Logo */}
-        <h1 className="font-bold text-[28px] lg:text-[34px] font-[josefin-sans] text-[#0D0E43]">
+        <h1 className="font-[700] text-[34px] leading-[34px] lg:text-[34px]  text-[#0D0E43]">
           Hekto
         </h1>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-8 items-center">
+        <nav className="hidden md:flex gap-8 items-center font-[lato] font-[400] text-[16px]">
           <Link
             href="/"
             className="text-[#FB2E86] flex items-center hover:underline"
@@ -29,17 +36,50 @@ export default function Navbar() {
           <Link href="/pages" className="hover:underline hover:text-[#FB2E86]">
             Pages
           </Link>
-          <Link href="/products" className="hover:underline hover:text-[#FB2E86]">
+          <Link
+            href="/productdetails"
+            className="hover:underline hover:text-[#FB2E86]"
+          >
             Products
           </Link>
           <Link href="/blog" className="hover:underline hover:text-[#FB2E86]">
             Blog
           </Link>
-          <Link href="/shop" className="hover:underline hover:text-[#FB2E86]">
-            Shop
+          <Link href=" " className="hover:underline hover:text-[#FB2E86]">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex">
+                Shop <ChevronDown className="ml-1 mt-[6px]  w-4 h-4" />{" "}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <Link href="/shop-grid">Shop Grid Default</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/shoplist">Shop List</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </Link>
-          <Link href="/contact" className="hover:underline hover:text-[#FB2E86]">
-            Contact
+          <Link
+            href=" "
+            className="  items-center hover:underline hover:text-[#FB2E86]"
+          >
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex">
+                Contact <ChevronDown className="ml-1 mt-[6px]  w-4 h-4" />{" "}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <Link href="/contact">Contact Us</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/about">About Us</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/demo">Demo </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </Link>
         </nav>
 

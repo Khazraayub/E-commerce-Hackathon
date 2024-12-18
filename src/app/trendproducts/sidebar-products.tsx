@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 const sidebarProducts = [
@@ -26,7 +27,7 @@ const sidebarProducts = [
 
 export default function SidebarProducts() {
   return (
-    <div className="space-y-4 font-[josefin-sans]">
+    <div className="space-y-4 ">
       {sidebarProducts.map((product) => (
         <Link
           key={product.id}

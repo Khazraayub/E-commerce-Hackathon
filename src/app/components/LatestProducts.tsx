@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { Heart } from "lucide-react";
 import { IoCartOutline } from "react-icons/io5";
 import { FaSearchPlus } from "react-icons/fa";
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 const tabs = ["New Arrival", "Best Seller", "Featured", "Special Offer"];
@@ -62,10 +63,10 @@ export default function LatestProducts() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="bg-white py-16 font-[josefin-sans]">
+    <section className="bg-white py-16 ]">
       <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         {/* Section Title */}
-        <h2 className="text-center text-3xl sm:text-4xl font-bold font-[josefin-sans] text-[#1A0B5B] mb-8">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold  text-[#1A0B5B] mb-8">
           Latest Products
         </h2>
 
@@ -74,7 +75,7 @@ export default function LatestProducts() {
           {tabs.map((tab, index) => (
             <button
               key={index}
-              className={`${
+              className={`font-[lato] ${
                 activeTab === index
                   ? "text-[#FB2E86] border-b-2 border-[#FB2E86]"
                   : "hover:text-[#FB2E86]"
@@ -91,14 +92,14 @@ export default function LatestProducts() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-[#F6F7FB] hover:bg-white rounded-lg shadow-lg p-4 group relative overflow-hidden"
+              className="bg-white  rounded-lg  p-4 group relative overflow-hidden"
             >
               {/* Product Image */}
-              <div className="relative ">
+              <div className="relative bg-[#F6F7FB]   ">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-56 object-contain"
+                  className="w-full h-56 object-contain "
                 />
                 
                 
@@ -106,7 +107,7 @@ export default function LatestProducts() {
 
               {/* Product Details */}
               
-              <div className=" flex text-center justify-between mt-4">
+              <div className=" flex text-center justify-between mt-4 ">
                 <h3 className="text-lg font-medium border-b text-[#1A0B5B] mb-2">
                   {product.name}
                 </h3>
@@ -136,9 +137,10 @@ export default function LatestProducts() {
                   </div>
                   {/* Sale Badge */}
                 
-                  <span className="absolute top-4 left-4 bg-[#2D5BFF] text-white px-3 py-1 text-xs font-bold rounded-full shadow-md">
-                    Sale
-                  </span>
+                  <div className="absolute w-[84.87px] h-[56.73px] top-4 left-4 bg-[#F6F7FB] text-white px-3 py-1 text-xs font-bold ">
+                    <img
+                    src="/images/productsale.png"/>
+                  </div>
 
                 </div>
               </div>

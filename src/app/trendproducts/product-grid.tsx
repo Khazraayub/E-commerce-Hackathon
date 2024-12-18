@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 
@@ -65,10 +66,10 @@ export default function ProductGrid() {
               {product.name}
             </h3>
             <div className="flex justify-center gap-3">
-              <span className="text-[#151875] font-semibold font-[josefin-sans]">
+              <span className="text-[#151875] font-semibold ">
                 ${product.currentPrice.toFixed(2)}
               </span>
-              <span className="text-gray-400 font-[josefin-sans] line-through">
+              <span className="text-gray-400  line-through">
                 ${product.originalPrice.toFixed(2)}
               </span>
             </div>

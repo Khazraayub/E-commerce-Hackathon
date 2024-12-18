@@ -1,4 +1,6 @@
 import React from "react";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 
 export default function Hero() {
   return (
@@ -15,14 +17,14 @@ export default function Hero() {
             />
             {/* Text Content */}
             <div className="mt-8 lg:mt-0 lg:w-[644px] px-4 lg:px-0">
-              <p className="text-[#FB2E86] font-medium text-sm mb-2">
+              <p className="text-[#FB2E86] font-medium font-[lato] text-sm mb-2">
                 Best Furniture For Your Castle...
               </p>
-              <h1 className="text-black font-[josefin-sans] font-bold text-3xl sm:text-4xl lg:text-[40px] leading-tight mb-4">
+              <h1 className="text-black  font-bold text-3xl sm:text-4xl lg:text-[40px] leading-tight mb-4">
                 New Furniture Collection 
                 <br /> Trends in 2020
               </h1>
-              <p className="text-[#8A8FB9] text-sm mb-6">
+              <p className="text-[#8A8FB9] font-[lato] font-[700] text-[16px] mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
                 in est adipiscing in phasellus non in justo.
               </p>

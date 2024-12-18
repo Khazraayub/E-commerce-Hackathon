@@ -1,5 +1,5 @@
-
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 export default function Offer() {
@@ -28,7 +28,7 @@ export default function Offer() {
 
   return (
     <section className="w-full py-16 px-4">
-      <h2 className="text-center text-4xl font-bold font-[josefin-sans] text-[#151875] mb-12">
+      <h2 className="text-center text-4xl font-bold  text-[#151875] mb-12">
         What Shopex Offer!
       </h2>
       <div className="container mx-auto w-full ">
@@ -50,7 +50,7 @@ export default function Offer() {
                 
               </div>
                 </div>
-                <h3 className="text-xl font-semibold font-[josefin-sans] text-[#151875] mb-3">
+                <h3 className="text-xl font-semibold  text-[#151875] mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-[#1A0B5B4D] text-opacite-[30%] font-[lato] text-sm">

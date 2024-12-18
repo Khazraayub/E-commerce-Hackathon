@@ -1,5 +1,6 @@
 import Link from "next/link";
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 export default function Contact() {
@@ -7,8 +8,8 @@ export default function Contact() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       {/* Header */}
       <div className="text-start pt-5 w-full h-[200px] pl-10 bg-[#F6F5FF] mb-8">
-        <h1 className="text-3xl font-bold font-[josefin-sans]">Contact Us</h1>
-        <p className="text-sm text-black font-lato">
+        <h1 className="text-3xl font-bold text-[#101750] ">Contact Us</h1>
+        <p className="text-sm text-black font-[lato]">
           Home. &nbsp; Pages. &nbsp;
           <span className="text-[#FB2E86]">Contact Us</span>
         </p>
@@ -18,7 +19,7 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Information About Us Section */}
           <div>
-            <h2 className="text-[28px] lg:text-[36px] font-bold text-[#151875] font-[josefin-sans] mb-4">
+            <h2 className="text-[28px] lg:text-[36px] font-bold text-[#151875]  mb-4">
               Information About us
             </h2>
             <p className="text-[#8A8FB9] font-[lato]">
@@ -36,7 +37,7 @@ export default function Contact() {
 
           {/* Contact Way Section */}
           <div>
-            <h2 className="text-[28px] lg:text-[36px] font-bold text-[#151875] font-[josefin-sans] mb-4">
+            <h2 className="text-[28px] lg:text-[36px] font-bold text-[#151875]  mb-4">
               Contact Way
             </h2>
             <ul className="space-y-6 font-[lato] text-[#8A8FB9]">
@@ -79,7 +80,7 @@ export default function Contact() {
         {/* Get In Touch Section */}
         <div className="flex flex-col lg:flex-row mt-10 gap-10 items-center">
           <div className="bg-white p-8 w-full lg:w-[534px]">
-            <h2 className="text-2xl font-bold text-[#151875] font-[josefin-sans] mb-4">
+            <h2 className="text-2xl font-bold text-[#151875]  mb-4">
               Get In Touch
             </h2>
             <p className="text-[#8A8FB9] font-[lato] mb-6">
@@ -95,14 +96,14 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                    className="mt-1 block w-full px-3 py-2 font-[lato] border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
                     placeholder="Your E-mail"
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                    className="mt-1 block w-full px-3 py-2 font-[lato] border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -112,7 +113,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 font-[lato] border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
                 />
               </div>
 
@@ -121,14 +122,14 @@ export default function Contact() {
                 <textarea
                   placeholder="Type Your Message"
                   rows={4}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 font-[lato] border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
                 />
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full lg:w-[157px] h-[44px] bg-[#FB2E86] font-[josefin-sans] text-white py-2 px-4 rounded-md hover:bg-pink-600 transition"
+                className="w-full lg:w-[157px] h-[44px] bg-[#FB2E86]  text-white py-2 px-4 rounded-md hover:bg-pink-600 transition"
               >
                 Send Mail
               </button>

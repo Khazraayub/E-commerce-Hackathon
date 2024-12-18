@@ -1,5 +1,7 @@
 
 import Image from "next/image"
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 
 export default function Newslater() {
   return (

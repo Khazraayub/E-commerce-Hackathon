@@ -1,5 +1,6 @@
 import Image from "next/image"
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 
@@ -31,18 +32,15 @@ export default function ProductShowcase() {
         </div>
         
         <div className="w-full md:w-1/2 space-y-6">
-          <h2 className="text-[35px] md:text-4xl font-bold text-[#151875] font-[josefin-sans] leading-tight">
-            Unique Features Of leatest & 
-          </h2>
-          <h2 className="text-[35px] md:text-4xl font-bold text-[#151875] font-[josefin-sans] leading-tight">
-            Trending Products
+          <h2 className="text-[35px] md:text-4xl font-bold text-[#151875]  leading-tight">
+            Unique Features Of leatest & Trending Products
           </h2>
           
           <ul className="space-y-4">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start gap-3">
                 <span className={`w-2 h-2 rounded-full mt-2 ${
-                  index === 0 ? "bg-[#FB2E86]-500" :
+                  index === 0 ? "bg-[#FB2E86]" :
                   index === 1 ? "bg-blue-500" :
                   "bg-cyan-400"
                 }`} />
@@ -59,7 +57,7 @@ export default function ProductShowcase() {
           >
             Add To Cart
           </button>
-          <h3 className="flex flex-col text-lg font-semibold font-[josefin-sans] text-[#151875]">
+          <h3 className="flex flex-col text-lg font-semibold  text-[#151875]">
               B&B Italian Sofa
             
             <span className="text-[#151875] font-normal font-[lato]">

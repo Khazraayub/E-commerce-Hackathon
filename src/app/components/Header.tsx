@@ -5,7 +5,8 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { IoCartOutline } from "react-icons/io5";
 import { RiAccountCircleLine } from "react-icons/ri";
-
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b">
@@ -50,7 +51,9 @@ export default function Header() {
 
             {/* Cart */}
             <div className="cursor-pointer">
+            <Link href={"/shopping-cart"}>
               <IoCartOutline className="text-2xl" />
+              </Link>
             </div>
           </div>
         </div>

@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { FaPenNib } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
-import "@fontsource/josefin-sans";
+// Supports weights 100-700
+import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
 
 
 const LatestBlog = () => {
   return (
-    <div className="bg-white font-[josefin-sans]">
-      <h1 className="text-3xl text-center font-semibold py-10">Latest Blog</h1>
+    <div className="bg-white text-[#151875] ">
+      <h1 className="text-3xl text-center text-[#151875] font-semibold py-10">Latest Blog</h1>
       <div className="flex flex-col items-center lg:flex-row justify-evenly">
         <div className="group">
           <div className="space-y-4">
@@ -51,10 +52,10 @@ const LatestBlog = () => {
               height={225}
               className="rounded-lg"
             />
-            <div className="flex gap-10 ">
+            <div className="flex gap-10 text-[#151875] ">
               <div className="flex gap-2">
               <FaPenNib className="pt-1 text-[#FB2E86]" />
-                <p>Saber Ali</p>
+                <p>Surfauxion</p>
               </div>
               <div className="flex gap-2">
               <SlCalender className="pt-1 text-[#fb8a2e]" />
