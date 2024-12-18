@@ -111,17 +111,26 @@ export default function Navbar() {
                 <Link href="/pages" className="hover:underline">
                   Pages
                 </Link>
-                <Link href="/products" className="hover:underline">
+                <Link href="/productdetails" className="hover:underline">
                   Products
                 </Link>
                 <Link href="/blog" className="hover:underline">
                   Blog
                 </Link>
-                <Link href="/shop" className="hover:underline">
-                  Shop
+                <Link href="/shop-grid" className="hover:underline">
+                  Shop Grid Default
+                </Link>
+                <Link href="/shoplist" className="hover:underline">
+                  Shop List
                 </Link>
                 <Link href="/contact" className="hover:underline">
                   Contact
+                </Link>
+                <Link href="/about" className="hover:underline">
+                  About Us
+                </Link>
+                <Link href="/demo" className="hover:underline">
+                  Demo
                 </Link>
               </nav>
             </div>
