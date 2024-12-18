@@ -9,7 +9,7 @@ export default function AboutUs() {
     <div className="flex flex-col  items-center justify-center min-h-screen bg-white">
       {/* Header */}
       <div className="text-start pt-5 w-full h-[200px] pl-10 bg-[#F6F5FF] mb-8 ">
-        <h1 className="text-3xl font-bold text-[#101750] ">My Account</h1>
+        <h1 className="text-3xl font-bold text-[#101750] ">About Us</h1>
         <p className="text-sm text-black font-[lato]">
           Home. &nbsp; Pages. &nbsp;
           <span className="text-[#FB2E86]"> About Us </span>
