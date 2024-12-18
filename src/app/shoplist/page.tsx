@@ -8,7 +8,7 @@ import { FaSearchPlus } from "react-icons/fa";
 import { Heart } from "lucide-react";
 import Banner from "../components/Banner";
 
-export default function ShopGrid() {
+export default function ShopList() {
   const products = [
     {
       id: 1,
@@ -86,11 +86,11 @@ export default function ShopGrid() {
       {/* Header */}
       <div className="text-start pt-5 w-full h-[200px] pl-10 bg-[#F6F5FF] mb-8 ">
         <h1 className="text-3xl font-bold text-[#101750] ">
-          Shop Grid Default
+          Shop List
         </h1>
         <p className="text-sm text-black font-[lato]">
           Home. &nbsp; Pages. &nbsp;
-          <span className="text-[#FB2E86]"> Shop Grid Default</span>
+          <span className="text-[#FB2E86]"> Shop List</span>
         </p>
       </div>
 
