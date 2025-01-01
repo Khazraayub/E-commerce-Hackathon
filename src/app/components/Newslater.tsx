@@ -2,6 +2,7 @@
 import Image from "next/image"
 // Supports weights 100-700
 import '@fontsource-variable/josefin-sans';
+import Link from "next/link";
 
 export default function Newslater() {
   return (
@@ -20,12 +21,14 @@ export default function Newslater() {
             <h2 className="mb-8 text-3xl font-bold tracking-tight text-indigo-900 sm:text-4xl">
               Get Latest Update By Subscribe Our Newsletter
             </h2>
+            <Link href={"/login"}>
             <button
             
               className="bg-[#FB2E86] px-4 py-2 text-white hover:bg-[#FB2E86]-600"
             >
               Subscribe Now
             </button>
+            </Link>
           </div>
         </div>
       </section>

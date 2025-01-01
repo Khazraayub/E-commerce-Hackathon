@@ -33,8 +33,23 @@ export default function Navbar() {
             Home
             <ChevronDown className="ml-1 mt-[2px] text-[#FB2E86] w-4 h-4" />
           </Link>
-          <Link href="/pages" className="hover:underline hover:text-[#FB2E86]">
-            Pages
+          <Link href=" " className="hover:underline hover:text-[#FB2E86]">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex">
+                Pages <ChevronDown className="ml-1 mt-[6px]  w-4 h-4" />{" "}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <Link href="/demo">Demo </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/about">About Us</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/faq">FAQ</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </Link>
           <Link
             href="/productdetails"
@@ -42,8 +57,20 @@ export default function Navbar() {
           >
             Products
           </Link>
-          <Link href="/blog" className="hover:underline hover:text-[#FB2E86]">
-            Blog
+          <Link href=" " className="hover:underline hover:text-[#FB2E86]">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex">
+                Blog <ChevronDown className="ml-1 mt-[6px]  w-4 h-4" />{" "}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <Link href="/blog">Blog </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/singleblog">Single Blog</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </Link>
           <Link href=" " className="hover:underline hover:text-[#FB2E86]">
             <DropdownMenu>
@@ -57,29 +84,17 @@ export default function Navbar() {
                 <DropdownMenuItem>
                   <Link href="/shoplist">Shop List</Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/shopsidebar">Shop Left Sidebar</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </Link>
           <Link
-            href=" "
+            href="/contact "
             className="  items-center hover:underline hover:text-[#FB2E86]"
           >
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex">
-                Contact <ChevronDown className="ml-1 mt-[6px]  w-4 h-4" />{" "}
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem>
-                  <Link href="/contact">Contact Us</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href="/about">About Us</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href="/demo">Demo </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            Contact
           </Link>
         </nav>
 
@@ -108,8 +123,8 @@ export default function Navbar() {
                 <Link href="/" className="hover:underline">
                   Home
                 </Link>
-                <Link href="/pages" className="hover:underline">
-                  Pages
+                <Link href="/faq" className="hover:underline">
+                  FAQ
                 </Link>
                 <Link href="/productdetails" className="hover:underline">
                   Products
@@ -117,11 +132,17 @@ export default function Navbar() {
                 <Link href="/blog" className="hover:underline">
                   Blog
                 </Link>
+                <Link href="/singleblog" className="hover:underline">
+                  Single Blog
+                </Link>
                 <Link href="/shop-grid" className="hover:underline">
                   Shop Grid Default
                 </Link>
                 <Link href="/shoplist" className="hover:underline">
                   Shop List
+                </Link>
+                <Link href="/shopsidebar" className="hover:underline">
+                  Shop Left Sidebar
                 </Link>
                 <Link href="/contact" className="hover:underline">
                   Contact

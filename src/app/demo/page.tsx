@@ -2,6 +2,7 @@
 import "@fontsource-variable/josefin-sans";
 import "@fontsource/lato";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Demo() {
   const cartItems = [
@@ -234,9 +235,11 @@ export default function Demo() {
     </div>
 
     {/* Checkout Button */}
+    <Link href="/ordercomplete">
     <button className="w-full mt-4 py-2 bg-[#19D16F] text-white font-medium text-sm md:text-base rounded-md hover:bg-green-600 transition">
       Proceed To Checkout
     </button>
+    </Link>
   </div>
 </div>
 

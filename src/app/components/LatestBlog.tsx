@@ -4,6 +4,7 @@ import { SlCalender } from "react-icons/sl";
 // Supports weights 100-700
 import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
+import Link from "next/link";
 
 
 const LatestBlog = () => {
@@ -38,9 +39,11 @@ const LatestBlog = () => {
               More off this less hello samlande lied much <br />
               over tightly circa horse taped mightly
             </p>
+            <Link href={"/singleblog"}>
             <button className="border-b-2 border-b-[#151875] text-[#151875] group-hover:text-[#FB2E86] group-hover:border-b-[#FB2E86]">
               Read More
             </button>
+            </Link>
           </div>
         </div>
         <div className="group">
@@ -69,9 +72,11 @@ const LatestBlog = () => {
               More off this less hello samlande lied much <br />
               over tightly circa horse taped mightly
             </p>
+            <Link href={"/singleblog"}>
             <button className="border-b-2 border-b-[#151875] text-[#151875] group-hover:text-[#FB2E86] group-hover:border-b-[#FB2E86]">
               Read More
             </button>
+            </Link>
           </div>
         </div>
         <div className="group">
@@ -100,9 +105,11 @@ const LatestBlog = () => {
               More off this less hello samlande lied much <br />
               over tightly circa horse taped mightly
             </p>
+            <Link href={"/singleblog"}>
             <button className="border-b-2 border-b-[#151875] text-[#151875] group-hover:text-[#FB2E86] group-hover:border-b-[#FB2E86]">
               Read More
             </button>
+            </Link>
           </div>
         </div>
       </div>

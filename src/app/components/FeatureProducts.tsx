@@ -1,10 +1,11 @@
 import React from "react";
-import {  Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 import { IoCartOutline } from "react-icons/io5";
 import { FaSearchPlus } from "react-icons/fa";
 // Supports weights 100-700
-import '@fontsource-variable/josefin-sans';
+import "@fontsource-variable/josefin-sans";
 import "@fontsource/lato";
+import Link from "next/link";
 
 const products = [
   {
@@ -12,7 +13,7 @@ const products = [
     name: "Cantilever chair",
     code: "Y523201",
     price: "$42.00",
-    image: "/images/feature1.png", 
+    image: "/images/feature1.png",
   },
   {
     id: 2,
@@ -58,48 +59,49 @@ export default function FeaturedProducts() {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-contain"
+                  className="w-full h-48 py-8 object-contain"
                 />
-                
 
-              {/* Product Details */}
-              <div className=" bg-white w-full hover:bg-[#2F1AC4]  hover:text-white  text-center mt-4 ">
-                <h3 className="text-lg font-semibold font-[lato]  text-[#FB2E86] mb-1">
-                  {product.name}
-                </h3>
-                <p className="text-sm text-[#151875] mb-1">Code - {product.code}</p>
-                <div className="flex justify-center  space-x-2">
-                <span className="w-4 h-1 bg-[#05E6B7] rounded-md "></span>
-                <span className="w-4 h-1 bg-[#FB2E86] rounded-md "></span>
-                <span className="w-4 h-1 bg-[#00009D] rounded-md "></span>
-                </div>
-                <p className="text-lg font-bold font-[lato] text-[#151875]">{product.price}</p>
-                {/* Hover Overlay */}
-                <div className="absolute inset-0  opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition-all duration-300">
-                  <button className="bg-[#08D15F]  text-white font-medium text-sm px-4 py-2 rounded-lg mb-2">
-                    View Details
-                  </button>
-                  <div className="absolute top-4 left-4 flex space-x-2 inset-0  opacity-0 group-hover:opacity-100">
-                  {/* Icons (Optional) */}
-                  <div >
-                  <IoCartOutline className="text-2xl text-[#2F1AC4]" />
-                     
-                   
+                {/* Product Details */}
+                <div className=" bg-white py-7 px-4 w-full hover:bg-[#2F1AC4]  group-hover:text-white  text-center mt-4 ">
+                  <h3 className="text-lg font-semibold font-[lato]  text-[#FB2E86] mb-1">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm text-[#151875] mb-1">
+                    Code - {product.code}
+                  </p>
+                  <div className="flex justify-center  space-x-2">
+                    <span className="w-4 h-1 bg-[#05E6B7] rounded-md "></span>
+                    <span className="w-4 h-1 bg-[#FB2E86] rounded-md "></span>
+                    <span className="w-4 h-1 bg-[#00009D] rounded-md "></span>
                   </div>
-                  <div >
-                  
-                  <Heart className="ml-1 w-5 h-5 text-[#1389FF]" />
+                  <p className="text-lg font-bold font-[lato] text-[#151875]">
+                    {product.price}
+                  </p>
+                  {/* Hover Overlay */}
+                  <Link href={"/shop-grid"}>
+                  <div className="absolute inset-0  opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition-all duration-300">
+                    
+                      <button className="bg-[#08D15F] cursor-pointer  text-white font-medium text-sm px-4 py-2 rounded-lg mb-2">
+                        View Details
+                      </button>
+                    
+                    <div className="absolute top-4 left-4 flex space-x-2 inset-0  opacity-0 group-hover:opacity-100">
+                      {/* Icons (Optional) */}
+                      <div>
+                        <IoCartOutline className="text-3xl pb-2 text-[#2F1AC4]" />
+                      </div>
+                      <div>
+                        <Heart className="ml-1 w-5 h-5 mb-2 text-[#1389FF]" />
+                      </div>
+                      <div className="-pt-20">
+                        <FaSearchPlus className=" ml-1 w-5 h-5 text-[#1389FF]" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="-pt-20">
-                    <FaSearchPlus className=" ml-1 w-5 h-5 text-[#1389FF]"/>
-                  </div>
-                </div>
+                  </Link>
                 </div>
               </div>
-              </div>
-
-             
-              
             </div>
           ))}
         </div>

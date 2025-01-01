@@ -2,6 +2,7 @@
 import Image from "next/image";
 import "@fontsource-variable/josefin-sans";
 import "@fontsource/lato";
+import Link from "next/link";
 
 const cartItems = [
   {
@@ -146,16 +147,20 @@ export default function ShoppingCart() {
               <span className="text-[#19D16F]">●</span> Shipping & taxes calculated
               at checkout
             </p>
+            <Link href="/demo">
             <button className="bg-[#19D16F] text-white py-2 px-6 rounded hover:bg-green-600 w-full">
               Proceed To Checkout
             </button>
+            </Link>
           </div>
 
           {/* Calculate Shipping */}
           <div className=" p-6 pt-5 ">
+          
             <h3 className="text-xl font-bold text-center text-[#1D3178] mb-4">
               Calculate Shopping
             </h3>
+            
             <div className="bg-[#F4F4FC] h-[284px] w-[371px] p-6 rounded shadow-md">
             <input
               type="text"
@@ -173,9 +178,13 @@ export default function ShoppingCart() {
               className="w-full mb-4 border-b bg-[#F4F4FC] text-[#C5CBE3]   py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#151875]"
             />
             <div className="w-[70%] h-[41px]">
+            
             <button className="bg-[#FB2E86]  text-white py-2 px-6 rounded hover:bg-[#e02b7e] ">
+            
               Calculate Shipping
+              
             </button>
+            
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import Image from "next/image"
 // Supports weights 100-700
 import '@fontsource-variable/josefin-sans';
 import "@fontsource/lato";
+import Link from "next/link";
 
 
 export default function ProductShowcase() {
@@ -51,12 +52,13 @@ export default function ProductShowcase() {
           
           <div className="flex space-x-3">
             
-          
+          <Link href={"/shopping-cart"}>
           <button 
             className="bg-[#FB2E86] hover:bg-[#FB2E86] py-4 text-white px-8"
           >
             Add To Cart
           </button>
+          </Link>
           <h3 className="flex flex-col text-lg font-semibold  text-[#151875]">
               B&B Italian Sofa
             

@@ -67,7 +67,7 @@ export default function Discount() {
               </div>
             </ul>
             <div className='max-w-fit'>
-              <Link href={"/AllProducts"}>
+              <Link href={"/shoplist"}>
               <div>
             <button className='bg-[#FB2E86] p-2 mt-2 text-white rounded-sm  px-4 overflow-hidden'>Shop Now</button>
         </div>

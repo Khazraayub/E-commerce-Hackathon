@@ -1,6 +1,7 @@
 import React from "react";
 // Supports weights 100-700
 import '@fontsource-variable/josefin-sans';
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -24,13 +25,15 @@ export default function Hero() {
                 New Furniture Collection 
                 <br /> Trends in 2020
               </h1>
-              <p className="text-[#8A8FB9] font-[lato] font-[700] text-[16px] mb-6">
+              <p className="text-[#8A8FB9] font-[lato] font-[500] text-[16px] mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
                 in est adipiscing in phasellus non in justo.
               </p>
+              <Link href={"/shoplist"}>
               <button className="px-6 py-3 bg-[#FB2E86] text-white rounded-md text-sm font-medium hover:bg-[#e02176] transition-all">
                 Shop Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
