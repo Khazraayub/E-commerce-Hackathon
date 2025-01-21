@@ -52,7 +52,7 @@ export default function Navbar() {
             </DropdownMenu>
           </Link>
           <Link
-            href="/productdetails"
+            href="/shop-grid"
             className="hover:underline hover:text-[#FB2E86]"
           >
             Products
@@ -126,7 +126,7 @@ export default function Navbar() {
                 <Link href="/faq" className="hover:underline">
                   FAQ
                 </Link>
-                <Link href="/productdetails" className="hover:underline">
+                <Link href="/shop-grid" className="hover:underline">
                   Products
                 </Link>
                 <Link href="/blog" className="hover:underline">

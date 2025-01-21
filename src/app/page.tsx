@@ -10,7 +10,12 @@ import TrendingProducts from './components/TrendingProducts'
 import TopCategories from './components/TopCategories'
 import Banner from './components/Banner'
 import LatestBlog from './components/LatestBlog'
-export default function Home() {
+import ProductCards from './Products/page'
+
+
+
+export default async function Home() {
+  
   return (
     <div>
       <Hero/>
@@ -24,8 +29,12 @@ export default function Home() {
       <Newslater/>
       <Banner/>
       <LatestBlog/>
+      
       <br/>
 
     </div>
   )
 }
+
+
+
