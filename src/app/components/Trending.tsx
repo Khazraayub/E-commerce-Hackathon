@@ -52,7 +52,7 @@ export default function ProductShowcase() {
           
           <div className="flex space-x-3">
             
-          <Link href={"/shopping-cart"}>
+          <Link href={"/shop-grid"}>
           <button 
             className="bg-[#FB2E86] hover:bg-[#FB2E86] py-4 text-white px-8"
           >

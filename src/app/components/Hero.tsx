@@ -29,7 +29,7 @@ export default function Hero() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
                 in est adipiscing in phasellus non in justo.
               </p>
-              <Link href={"/shoplist"}>
+              <Link href={"/shop-grid"}>
               <button className="px-6 py-3 bg-[#FB2E86] text-white rounded-md text-sm font-medium hover:bg-[#e02176] transition-all">
                 Shop Now
               </button>
